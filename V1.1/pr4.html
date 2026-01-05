@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="generator" content="#VES2526">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Prisma4 v.1.1</title>
+  <style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+  <style type="text/css">
+html {
+font-size: 100%;
+overflow-y: scroll;
+-webkit-text-size-adjust: 100%;
+-ms-text-size-adjust: 100%;
+}
+body {
+color: #444;
+font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
+font-size: 12px;
+line-height: 1.7;
+padding: 1em;
+margin: auto;
+max-width: 72em;
+background: #fefefe;
+}
+a {
+color: #0645ad;
+text-decoration: none;
+}
+a:visited {
+color: #0b0080;
+}
+a:hover {
+color: #06e;
+}
+a:active {
+color: #faa700;
+}
+a:focus {
+outline: thin dotted;
+}
+*::-moz-selection {
+background: rgba(255, 255, 0, 0.3);
+color: #000;
+}
+*::selection {
+background: rgba(255, 255, 0, 0.3);
+color: #000;
+}
+a::-moz-selection {
+background: rgba(255, 255, 0, 0.3);
+color: #0645ad;
+}
+a::selection {
+background: rgba(255, 255, 0, 0.3);
+color: #0645ad;
+}
+p {
+margin: 1em 0;
+}
+img {
+max-width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+color: #111;
+line-height: 125%;
+margin-top: 2em;
+font-weight: normal;
+}
+h4, h5, h6 {
+font-weight: bold;
+}
+h1 {
+font-size: 2.5em;
+}
+h2 {
+font-size: 2em;
+}
+h3 {
+font-size: 1.5em;
+}
+h4 {
+font-size: 1.2em;
+}
+h5 {
+font-size: 1em;
+}
+h6 {
+font-size: 0.9em;
+}
+blockquote {
+color: #666666;
+margin: 0;
+padding-left: 3em;
+border-left: 0.5em #EEE solid;
+}
+hr {
+display: block;
+height: 2px;
+border: 0;
+border-top: 1px solid #aaa;
+border-bottom: 1px solid #eee;
+margin: 1em 0;
+padding: 0;
+}
+pre, code, kbd, samp {
+color: #000;
+font-family: monospace, monospace;
+_font-family: 'courier new', monospace;
+font-size: 0.98em;
+}
+pre {
+white-space: pre;
+white-space: pre-wrap;
+word-wrap: break-word;
+}
+b, strong {
+font-weight: bold;
+}
+dfn {
+font-style: italic;
+}
+ins {
+background: #ff9;
+color: #000;
+text-decoration: none;
+}
+mark {
+background: #ff0;
+color: #000;
+font-style: italic;
+font-weight: bold;
+}
+sub, sup {
+font-size: 75%;
+line-height: 0;
+position: relative;
+vertical-align: baseline;
+}
+sup {
+top: -0.5em;
+}
+sub {
+bottom: -0.25em;
+}
+ul, ol {
+margin: 1em 0;
+padding: 0 0 0 2em;
+}
+li p:last-child {
+margin-bottom: 0;
+}
+ul ul, ol ol {
+margin: .3em 0;
+}
+dl {
+margin-bottom: 1em;
+}
+dt {
+font-weight: bold;
+margin-bottom: .8em;
+}
+dd {
+margin: 0 0 .8em 2em;
+}
+dd:last-child {
+margin-bottom: 0;
+}
+img {
+border: 0;
+-ms-interpolation-mode: bicubic;
+vertical-align: middle;
+}
+figure {
+display: block;
+text-align: center;
+margin: 1em 0;
+}
+figure img {
+border: none;
+margin: 0 auto;
+}
+figcaption {
+font-size: 0.8em;
+font-style: italic;
+margin: 0 0 .8em;
+}
+table {
+margin-bottom: 2em;
+border-bottom: 1px solid #ddd;
+border-right: 1px solid #ddd;
+border-spacing: 0;
+border-collapse: collapse;
+}
+table th {
+padding: .2em 1em;
+background-color: #eee;
+border-top: 1px solid #ddd;
+border-left: 1px solid #ddd;
+}
+table td {
+padding: .2em 1em;
+border-top: 1px solid #ddd;
+border-left: 1px solid #ddd;
+vertical-align: top;
+}
+.author {
+font-size: 1.2em;
+text-align: center;
+}
+@media only screen and (min-width: 480px) {
+body {
+font-size: 14px;
+}
+}
+@media only screen and (min-width: 768px) {
+body {
+font-size: 16px;
+}
+}
+@media print {
+* {
+background: transparent !important;
+color: black !important;
+filter: none !important;
+-ms-filter: none !important;
+}
+body {
+font-size: 12pt;
+max-width: 100%;
+}
+a, a:visited {
+text-decoration: underline;
+}
+hr {
+height: 1px;
+border: 0;
+border-bottom: 1px solid black;
+}
+a[href]:after {
+content: " (" attr(href) ")";
+}
+abbr[title]:after {
+content: " (" attr(title) ")";
+}
+.ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+content: "";
+}
+pre, blockquote {
+border: 1px solid #999;
+padding-right: 1em;
+page-break-inside: avoid;
+}
+tr, img {
+page-break-inside: avoid;
+}
+img {
+max-width: 100% !important;
+}
+@page :left {
+margin: 15mm 20mm 15mm 10mm;
+}
+@page :right {
+margin: 15mm 10mm 15mm 20mm;
+}
+p, h2, h3 {
+orphans: 3;
+widows: 3;
+}
+h2, h3 {
+page-break-after: avoid;
+}
+}
+</style>
+</head>
+<body>
+<h1 id="pr4-1.1">Prisma4 v.1.1 (draft)</h1>
+<h3 id="working-version-january-2026">Working Version, January 2026</h3>
+<p><strong>This version:</strong> <a href="https://github.com/saldoro/pr4/v1.1/">https://github.com/saldoro/pr4/v1.1/</a></p>
+<p><strong>Latest version:</strong> <a href="https://github.com/saldoro/pr4/">https://github.com/saldoro/pr4/</a></p>
+<p><strong>Editor:</strong> Salvador Domenech</p>
+<hr>
+<h2 id="abstract">Abstract</h2>
+<p>This specification lists which classes and properties of the <a href="http://www.cidoc-crm.org/">CIDOC Conceptual Reference Model</a> are
+used in ArchOnto. This specification takes into account the CIDOC CRM
+standard in version <a href="https://cidoc-crm.org/Version/version-7.1.3">7.1.3</a>, which is
+regarded as the Official ISO Correspondence.</p>
+<p>Only the classes and properties essential for understanding and
+operating ArchOnto were considered. As CIDOC CRM is developed by an
+external institution, it was necessary to identify the core elements
+required for its correct application within ArchOnto.</p>
+<p>This specification also allows tracking the use of these elements
+over time.</p>
+<p>While any CIDOC CRM class can be used in ArchOnto, the ones presented
+here are those deemed fundamental at the moment of the publication of
+this version of ArchOnto.</p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="https://episa-labs.inesctec.pt/archonto/1.0/archonto.html#glossary">Glossary</a></li>
+<li><a href="https://episa-labs.inesctec.pt/archonto/1.0/archonto.html#introduction">1.
+Introduction</a></li>
+<li><a href="https://episa-labs.inesctec.pt/archonto/1.0/archonto.html#architecture">2.
+Architecture</a></li>
+<li><a href="https://episa-labs.inesctec.pt/archonto/1.0/archonto.html#classes-and-properties">3.
+Classes and Properties</a>
+<ul>
+<li><a href="https://episa-labs.inesctec.pt/archonto/1.0/archonto.html#31-ArchOnto">ArchOnto</a></li>
+<li><a href="https://purl.org/episa/archonto/data_object/1.0">DataObject</a></li>
+<li><a href="https://purl.org/episa/archonto/cidoc/7.1.3">CIDOC CRM
+Main</a></li>
+<li><a href="http://purl.org/episa/archonto/cidoc_crm_pc/7.1.3">CIDOC
+CRM PC</a></li>
+<li><a href="https://purl.org/episa/archonto/isad_ontology/1.0">ISAD
+Ontology</a></li>
+<li><a href="https://purl.org/episa/archonto/link2data_object/1.0">Link2DataObject</a></li>
+</ul></li>
+</ul>
+<h1 id="pr4-vocabulary">Prisma 4 Web Vocabulary</h1>
+<p>The CIDOC Conceptual Reference Model (CRM) is a
+theoretical and practical tool for information integration in the field
+of cultural heritage. Next will be presented the CIDOC CRM <a href="https://episa-labs.inesctec.pt/archonto/cidoc_crm/7.1.3/cidoc_crm.html#classesCIDOC">classes</a> and <a href="https://episa-labs.inesctec.pt/archonto/cidoc_crm/7.1.3/cidoc_crm.html#propertiesCIDOC">properties</a> used in ArchOnto.</p>
+<h3 id="classes"><span id="classesCIDOC"><strong>Classes</strong></span></h3>
+<ul>
+<li><a href="https://github.com/saldoro/pr4/v1.1/pr4.html#0100">0100 Item</a></li>
+<li><a href="https://github.com/saldoro/pr4/v1.1/pr4.html#0200">0200 Manufacturer</a></li>
+<li><a href="https://github.com/saldoro/pr4/v1.1/pr4.html#0300">0300 Supplier</a></li>
+</ul>
+<table>
+<colgroup>
+<col style="width: 100%">
+</colgroup>
+<thead>
+<tr>
+<th><span id="0100">0100 Item</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Any item or product for which specific information needs to be 
+	retrieved. <br>An Item (article, product, item, goods item, object)
+	is the smallest unit managed as an entity within the Prisma® 4 system. 
+	It represents any material, spare part, consumable or element acquired 
+	and stored in the supplies warehouse, which can be used in construction 
+	and maintenance work, by both internal and external operators.</td>
+</tr>
+<tr>
+<td><strong>URI</strong>: <a href="https://github.com/saldoro/pr4/v1.1/0100_Item">https://github.com/saldoro/pr4/v1.1/0100_Item</a></td>
+</tr>
+<tr>
+<td><strong>Superclass</strong>:<br></td>
+</tr>
+<tr>
+<td><strong>Subclasses</strong>:<br></td>
+</tr>
+<tr>
+<td><strong>Related properties</strong>:<br></td>
+</tr>
+<tr>
+<td><strong>Example values</strong>:<br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<table>
+<colgroup>
+<col style="width: 100%">
+</colgroup>
+<thead>
+<tr>
+<th><span id="0200">0200 Manufacturer</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Organization that produces the Item. <br>The Manufacturer may also supply its own products, in which 
+	case it should also be included under Suppliers.</td>
+</tr>
+<tr>
+<td><strong>URI</strong>: <a href="https://github.com/saldoro/pr4/1.1/0200_Manufacturer">https://github.com/saldoro/pr4/1.1/0200_Manufacturer</a></td>
+</tr>
+<tr>
+<td><strong>Superclass</strong>:<br></td>
+</tr>
+<tr>
+<td><strong>Subclasses</strong>:<br></td>
+</tr>
+<tr>
+<td><strong>Related properties</strong></td>
+</tr>
+<tr>
+<td><strong>Example values</strong>:<br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<table>
+<colgroup>
+<col style="width: 100%">
+</colgroup>
+<thead>
+<tr>
+<th><span id="0300">0300 Supplier</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Organization that supplies, distributes, provides, or sells the Item.</td>
+</tr>
+<tr>
+<td><strong>URI</strong>: <a href="https://github.com/saldoro/pr4/1.1/0300_Supplier">https://github.com/saldoro/pr4/1.1/0300_Supplier</a></td>
+</tr>
+<tr>
+<td><strong>Superclass</strong>:<br></td>
+</tr>
+<tr>
+<td><strong>Subclasses</strong>:<br></td>
+</tr>
+<tr>
+<td><strong>Related properties</strong>:<br></td>
+</tr>
+<tr>
+<td><strong>Example values</strong>:<br></td>
+</tr>
+</tbody>
+</table>
+<h3 id="properties"><span id="propertiesPr4"><strong>Properties</strong></span></h3>
+<ul>
+<li><a href="https://github.com/saldoro/pr4/v1.1/pr4.html#0101">0101 Item Identifier</a></li>
+<li><a href="https://github.com/saldoro/pr4/v1.1/pr4.html#0102">0102 GTIN</a></li>
+</ul>
+<p><br></p>
+<table>
+<colgroup>
+<col style="width: 100%">
+</colgroup>
+<thead>
+<tr>
+<th><span id="0101">0101 Item Identifier</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>This property .<br></td>
+</tr>
+<tr>
+<td><strong>URI</strong>: <a href="https://github.com/saldoro/pr4/v1.1/0101_itemID">https://github.com/saldoro/pr4/v1.1/0101_itemID</a></td>
+</tr>
+<tr>
+<td><strong>Domain</strong>: </td>
+</tr>
+<tr>
+<td><strong>Range</strong>: </td>
+</tr>
+<tr>
+<td><strong>Superproperty of</strong>:<br></td>
+</tr>
+<tr>
+<td><strong>Inverse</strong>: </td>
+</tr>
+<tr>
+<td><strong>Example values</strong>:<br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<table>
+<colgroup>
+<col style="width: 100%">
+</colgroup>
+<thead>
+<tr>
+<th><span id="0102">0102 gtin</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>This property .<br>In
+particular it captures the characterisation of the item itself, its
+internal structures, appearance etc.<br>Like property P2 has type (is
+type of), this property is a consequence of the restricted focus of the
+CRM. The aim is not to capture, in a structured form, everything that
+can be said about an item; indeed, the CRM formalism is not regarded as
+sufficient to express everything that can be said. Good practice
+requires use of distinct note fields for different aspects of a
+characterisation. The P3.1 has type property of P3 has note allows
+differentiation of specific notes, e.g.&nbsp;“construction”, “decoration”
+etc.<br>An item may have many notes, but a note is attached to a
+specific item.</td>
+</tr>
+<tr>
+<td><strong>URI</strong>: <a href="https://github.com/saldoro/pr4/v1.1/0102_gtin">https://github.com/saldoro/pr4/v1.1/0102_gtin</a></td>
+</tr>
+<tr>
+<td><strong>Domain</strong>: </td>
+</tr>
+<tr>
+<td><strong>Range</strong>: </td>
+</tr>
+<tr>
+<td><strong>Superproperty of</strong>:<br> </td>
+</tr>
+<tr>
+<td><strong>Example values</strong>:<br> </td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+</body></html>
