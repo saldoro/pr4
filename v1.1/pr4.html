@@ -294,44 +294,9 @@ page-break-after: avoid;
 <p><strong>Editor:</strong> Salvador Domenech</p>
 <hr>
 <h2 id="abstract">Abstract</h2>
-<p>This specification lists which classes and properties of the <a href="http://www.cidoc-crm.org/">CIDOC Conceptual Reference Model</a> are
-used in ArchOnto. This specification takes into account the CIDOC CRM
-standard in version <a href="https://cidoc-crm.org/Version/version-7.1.3">7.1.3</a>, which is
-regarded as the Official ISO Correspondence.</p>
-<p>Only the classes and properties essential for understanding and
-operating ArchOnto were considered. As CIDOC CRM is developed by an
-external institution, it was necessary to identify the core elements
-required for its correct application within ArchOnto.</p>
-<p>This specification also allows tracking the use of these elements
-over time.</p>
-<p>While any CIDOC CRM class can be used in ArchOnto, the ones presented
-here are those deemed fundamental at the moment of the publication of
-this version of ArchOnto.</p>
-<h2 id="table-of-contents">Table of Contents</h2>
-<ul>
-<li><a href="https://episa-labs.inesctec.pt/archonto/1.0/archonto.html#glossary">Glossary</a></li>
-<li><a href="https://episa-labs.inesctec.pt/archonto/1.0/archonto.html#introduction">1.
-Introduction</a></li>
-<li><a href="https://episa-labs.inesctec.pt/archonto/1.0/archonto.html#architecture">2.
-Architecture</a></li>
-<li><a href="https://episa-labs.inesctec.pt/archonto/1.0/archonto.html#classes-and-properties">3.
-Classes and Properties</a>
-<ul>
-<li><a href="https://episa-labs.inesctec.pt/archonto/1.0/archonto.html#31-ArchOnto">ArchOnto</a></li>
-<li><a href="https://purl.org/episa/archonto/data_object/1.0">DataObject</a></li>
-<li><a href="https://purl.org/episa/archonto/cidoc/7.1.3">CIDOC CRM
-Main</a></li>
-<li><a href="http://purl.org/episa/archonto/cidoc_crm_pc/7.1.3">CIDOC
-CRM PC</a></li>
-<li><a href="https://purl.org/episa/archonto/isad_ontology/1.0">ISAD
-Ontology</a></li>
-<li><a href="https://purl.org/episa/archonto/link2data_object/1.0">Link2DataObject</a></li>
-</ul></li>
-</ul>
+<p>The Prisma4&nbsp; Web Vocabulary compiles terms defined in various standards and data systems (GS1 Web Vocabulary, Schema.org, etc.) and will be available for general use following the principles of Linked Data. <br>
+The  initial focus of vocabulary Prisma4 is on the classes and properties common to all items or products used in industrial maintenance.</p>
 <h1 id="pr4-vocabulary">Prisma 4 Web Vocabulary</h1>
-<p>The CIDOC Conceptual Reference Model (CRM) is a
-theoretical and practical tool for information integration in the field
-of cultural heritage. Next will be presented the CIDOC CRM <a href="https://episa-labs.inesctec.pt/archonto/cidoc_crm/7.1.3/cidoc_crm.html#classesCIDOC">classes</a> and <a href="https://episa-labs.inesctec.pt/archonto/cidoc_crm/7.1.3/cidoc_crm.html#propertiesCIDOC">properties</a> used in ArchOnto.</p>
 <h3 id="classes"><span id="classesCIDOC"><strong>Classes</strong></span></h3>
 <ul>
 <li><a href="https://github.com/saldoro/pr4/v1.1/pr4.html#0100">0100 Item</a></li>
@@ -385,8 +350,7 @@ of cultural heritage. Next will be presented the CIDOC CRM <a href="https://epis
 </thead>
 <tbody>
 <tr>
-<td>Organization that produces the Item. <br>The Manufacturer may also supply its own products, in which 
-	case it should also be included under Suppliers.</td>
+<td>Organization that produces the Item. The Manufacturer may also supply its own products, in which case it should also be included under Suppliers.</td>
 </tr>
 <tr>
 <td><strong>URI</strong>: <a href="https://github.com/saldoro/pr4/1.1/0200_Manufacturer">https://github.com/saldoro/pr4/1.1/0200_Manufacturer</a></td>
@@ -487,18 +451,7 @@ of cultural heritage. Next will be presented the CIDOC CRM <a href="https://epis
 </thead>
 <tbody>
 <tr>
-<td>This property .<br>In
-particular it captures the characterisation of the item itself, its
-internal structures, appearance etc.<br>Like property P2 has type (is
-type of), this property is a consequence of the restricted focus of the
-CRM. The aim is not to capture, in a structured form, everything that
-can be said about an item; indeed, the CRM formalism is not regarded as
-sufficient to express everything that can be said. Good practice
-requires use of distinct note fields for different aspects of a
-characterisation. The P3.1 has type property of P3 has note allows
-differentiation of specific notes, e.g.&nbsp;“construction”, “decoration”
-etc.<br>An item may have many notes, but a note is attached to a
-specific item.</td>
+<td>This property .</td>
 </tr>
 <tr>
 <td><strong>URI</strong>: <a href="https://github.com/saldoro/pr4/v1.1/0102_gtin">https://github.com/saldoro/pr4/v1.1/0102_gtin</a></td>
