@@ -14,8 +14,8 @@ The **Prisma4 Web Vocabulary** compiles terms defined in various standards and
 data systems (GS1 Web Vocabulary, Schema.org, etc.) and will be available for
 general use following the principles of **Linked Data**.
 
-The initial focus of Prisma4 is on the classes and properties common to all
-items or products used in **industrial maintenance**.
+The initial focus of Prisma4 Web Vocabulary is on the classes and properties
+common to all items or products used in **industrial maintenance**.
 
 
 ## Table of Contents
