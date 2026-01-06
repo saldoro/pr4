@@ -33,59 +33,52 @@ items or products used in **industrial maintenance**.
 
 ### 0100 Item
 
-**Description**
+> **Description**: Any item or product for which specific information needs to be retrieved.  An *Item* (article, product, goods item, object) is the smallest unit managed as an entity within the Prisma® 4 system. It represents any material, spare part, consumable or element acquired and stored in the supplies warehouse, usable in construction and maintenance work by internal and external operators.
 
-Any item or product for which specific information needs to be retrieved.  
-An *Item* (article, product, goods item, object) is the smallest unit managed
-as an entity within the Prisma® 4 system.
+> **URI**: https://github.com/saldoro/pr4/v1.1/0100_Item 
 
-It represents any material, spare part, consumable or element acquired and
-stored in the supplies warehouse, usable in construction and maintenance work
-by internal and external operators.
+> **Superclass**:
 
-| Field                  | Value |
-|------------------------|--------------------------------------------------------|
-| **URI**                | https://github.com/saldoro/pr4/v1.1/0100_Item |
-| **Superclass**         | |
-| **Subclasses**         | |
-| **Related properties** | |
-| **Example values**     | |
+> **Subclasses** :
+
+> **Related properties**:
+
+> **Example values**:
 
 [Back to top](#prisma4-web-vocabulary)
 
 
 ### 0200 Manufacturer
 
-**Description**
+> **Description**: Organization that produces the Item. The Manufacturer may also supply its own products, in which case it should also > be included under **Suppliers**.
 
-Organization that produces the Item.  
-The Manufacturer may also supply its own products, in which case it should also
-be included under **Suppliers**.
+> **URI**: https://github.com/saldoro/pr4/1.1/0200_Manufacturer
 
-| Field                  | Value |
-|------------------------|--------------------------------------------------------|
-| **URI**                | https://github.com/saldoro/pr4/1.1/0200_Manufacturer |
-| **Superclass**         | |
-| **Subclasses**         | |
-| **Related properties** | |
-| **Example values**     | |
+> **Superclass**:
+
+> **Subclasses** :
+
+> **Related properties**:
+
+> **Example values**:
 
 [Back to top](#prisma4-web-vocabulary)
 
 
 ### 0300 Supplier
 
-**Description**
+> **Description**: Organization that supplies, distributes, provides, or sells the Item.
 
-Organization that supplies, distributes, provides, or sells the Item.
+> **URI**: https://github.com/saldoro/pr4/1.1/0300_Supplier
 
-| Field                  | Value |
-|------------------------|--------------------------------------------------------|
-| **URI**                | https://github.com/saldoro/pr4/1.1/0300_Supplier |
-| **Superclass**         | |
-| **Subclasses**         | |
-| **Related properties** | |
-| **Example values**     | |
+> **Superclass**:
+
+> **Subclasses** :
+
+> **Related properties**:
+
+> **Example values**:
+
 
 [Back to top](#prisma4-web-vocabulary)
 
@@ -94,37 +87,40 @@ Organization that supplies, distributes, provides, or sells the Item.
 
 ### 0101 Item Identifier
 
-**Description**
+> **Description**: This property...
 
-This property.
+> **URI**: https://github.com/saldoro/pr4/v1.1/0101_itemID 
 
-| Field                  | Value |
-|------------------------|--------------------------------------------------------|
-| **URI**                | https://github.com/saldoro/pr4/v1.1/0101_itemID |
-| **Domain**             | |
-| **Range**              | |
-| **Superproperty of**   | |
-| **Inverse**            | |
-| **Example values**     | |
+> **Domain**:
+
+> **Range**:
+
+> **Superproperty of**:
+
+> **Inverse**:
+
+> **Example values**:
 
 [Back to top](#prisma4-web-vocabulary)
 
 
 ### 0102 GTIN
 
-**Description**
+> **Description**: This property...
 
-This property.
+> **URI**: https://github.com/saldoro/pr4/v1.1/0102_gtin
 
-| Field                  | Value |
-|------------------------|--------------------------------------------------------|
-| **URI**                | https://github.com/saldoro/pr4/v1.1/0102_gtin |
-| **Domain**             | |
-| **Range**              | |
-| **Superproperty of**   | |
-| **Inverse**            | |
-| **Example values**     | |
+> **Domain**:
+
+> **Range**:
+
+> **Superproperty of**:
+
+> **Inverse**:
+
+> **Example values**:
 
 [Back to top](#prisma4-web-vocabulary)
 
 
+(...)
