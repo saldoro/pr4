@@ -43,13 +43,13 @@ It represents any material, spare part, consumable or element acquired and
 stored in the supplies warehouse, usable in construction and maintenance work
 by internal and external operators.
 
-| Field | Value |
-|------|-------|
-| **URI** | https://github.com/saldoro/pr4/v1.1/0100_Item |
-| **Superclass** | |
-| **Subclasses** | |
+| Field                  | Value |
+|------------------------|--------------------------------------------------------|
+| **URI**                | https://github.com/saldoro/pr4/v1.1/0100_Item |
+| **Superclass**         | |
+| **Subclasses**         | |
 | **Related properties** | |
-| **Example values** | |
+| **Example values**     | |
 
 [Back to top](#prisma4-web-vocabulary)
 
@@ -62,13 +62,13 @@ Organization that produces the Item.
 The Manufacturer may also supply its own products, in which case it should also
 be included under **Suppliers**.
 
-| Field | Value |
-|------|-------|
-| **URI** | https://github.com/saldoro/pr4/1.1/0200_Manufacturer |
-| **Superclass** | |
-| **Subclasses** | |
+| Field                  | Value |
+|------------------------|--------------------------------------------------------|
+| **URI**                | https://github.com/saldoro/pr4/1.1/0200_Manufacturer |
+| **Superclass**         | |
+| **Subclasses**         | |
 | **Related properties** | |
-| **Example values** | |
+| **Example values**     | |
 
 [Back to top](#prisma4-web-vocabulary)
 
@@ -79,13 +79,13 @@ be included under **Suppliers**.
 
 Organization that supplies, distributes, provides, or sells the Item.
 
-| Field | Value |
-|------|-------|
-| **URI** | https://github.com/saldoro/pr4/1.1/0300_Supplier |
-| **Superclass** | |
-| **Subclasses** | |
+| Field                  | Value |
+|------------------------|--------------------------------------------------------|
+| **URI**                | https://github.com/saldoro/pr4/1.1/0300_Supplier |
+| **Superclass**         | |
+| **Subclasses**         | |
 | **Related properties** | |
-| **Example values** | |
+| **Example values**     | |
 
 [Back to top](#prisma4-web-vocabulary)
 
@@ -98,14 +98,14 @@ Organization that supplies, distributes, provides, or sells the Item.
 
 This property.
 
-| Field | Value |
-|------|-------|
-| **URI** | https://github.com/saldoro/pr4/v1.1/0101_itemID |
-| **Domain** | |
-| **Range** | |
-| **Superproperty of** | |
-| **Inverse** | |
-| **Example values** | |
+| Field                  | Value |
+|------------------------|--------------------------------------------------------|
+| **URI**                | https://github.com/saldoro/pr4/v1.1/0101_itemID |
+| **Domain**             | |
+| **Range**              | |
+| **Superproperty of**   | |
+| **Inverse**            | |
+| **Example values**     | |
 
 [Back to top](#prisma4-web-vocabulary)
 
@@ -116,13 +116,14 @@ This property.
 
 This property.
 
-| Field | Value |
-|------|-------|
-| **URI** | https://github.com/saldoro/pr4/v1.1/0102_gtin |
-| **Domain** | |
-| **Range** | |
-| **Superproperty of** | |
-| **Example values** | |
+| Field                  | Value |
+|------------------------|--------------------------------------------------------|
+| **URI**                | https://github.com/saldoro/pr4/v1.1/0102_gtin |
+| **Domain**             | |
+| **Range**              | |
+| **Superproperty of**   | |
+| **Inverse**            | |
+| **Example values**     | |
 
 [Back to top](#prisma4-web-vocabulary)
 
