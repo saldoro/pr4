@@ -1,4 +1,4 @@
-# Prisma4 Web Vocabulary
+# Prisma 4 Web Vocabulary
 
 **Version:** 1.1 *(draft)*  
 **Working version:** January 2026  
@@ -10,11 +10,11 @@
 
 ## Abstract
 
-The **Prisma4 Web Vocabulary** compiles terms defined in various standards and
+The **Prisma 4 Web Vocabulary** compiles terms defined in various standards and
 data systems (GS1 Web Vocabulary, Schema.org, etc.) and will be available for
 general use following the principles of **Linked Data**.
 
-The initial focus of Prisma4 Web Vocabulary is on the classes and properties
+The initial focus of Prisma 4 Web Vocabulary is on the classes and properties
 common to all items or products used in **industrial maintenance**.
 
 
