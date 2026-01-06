@@ -50,7 +50,7 @@ items or products used in **industrial maintenance**.
 
 ### 0200 Manufacturer
 
-> **Description**: Organization that produces the Item. The Manufacturer may also supply its own products, in which case it should also > be included under **Suppliers**.
+> **Description**: Organization that produces the Item. The Manufacturer may also supply its own products, in which case it should also be included under **Suppliers**.
 
 > **URI**: https://github.com/saldoro/pr4/1.1/0200_Manufacturer
 
