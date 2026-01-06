@@ -7,7 +7,6 @@
 - **This version:** https://github.com/saldoro/pr4/v1.1/
 - **Latest version:** https://github.com/saldoro/pr4/
 
----
 
 ## Abstract
 
@@ -18,7 +17,6 @@ general use following the principles of **Linked Data**.
 The initial focus of Prisma4 is on the classes and properties common to all
 items or products used in **industrial maintenance**.
 
----
 
 ## Table of Contents
 
@@ -30,7 +28,6 @@ items or products used in **industrial maintenance**.
   - [0101 Item Identifier](#0101-item-identifier)
   - [0102 GTIN](#0102-gtin)
 
----
 
 ## Classes
 
@@ -54,9 +51,8 @@ by internal and external operators.
 | **Related properties** | |
 | **Example values** | |
 
-⬆️ [Back to top](#prisma4-web-vocabulary)
+[Back to top](#prisma4-web-vocabulary)
 
----
 
 ### 0200 Manufacturer
 
@@ -74,9 +70,8 @@ be included under **Suppliers**.
 | **Related properties** | |
 | **Example values** | |
 
-⬆️ [Back to top](#prisma4-web-vocabulary)
+[Back to top](#prisma4-web-vocabulary)
 
----
 
 ### 0300 Supplier
 
@@ -92,9 +87,8 @@ Organization that supplies, distributes, provides, or sells the Item.
 | **Related properties** | |
 | **Example values** | |
 
-⬆️ [Back to top](#prisma4-web-vocabulary)
+[Back to top](#prisma4-web-vocabulary)
 
----
 
 ## Properties
 
@@ -113,9 +107,8 @@ This property.
 | **Inverse** | |
 | **Example values** | |
 
-⬆️ [Back to top](#prisma4-web-vocabulary)
+[Back to top](#prisma4-web-vocabulary)
 
----
 
 ### 0102 GTIN
 
@@ -131,7 +124,6 @@ This property.
 | **Superproperty of** | |
 | **Example values** | |
 
-⬆️ [Back to top](#prisma4-web-vocabulary)
+[Back to top](#prisma4-web-vocabulary)
 
----
 
